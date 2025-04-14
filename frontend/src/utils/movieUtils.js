@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Utility function to calculate recommendations based on user's watch history and preferences
 export const getRecommendedMovies = (movies, userHistory = [], userFavorites = []) => {
   if (!movies || movies.length === 0) {
