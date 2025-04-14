@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "genre": ["Sci-Fi", "Action", "Thriller"],
+    "rating": 8.8,
+    "duration": 148,
+    "price": 4.99,
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    "image": "inception.jpg",
+    "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
+    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page", "Tom Hardy"],
+    "reviews": [
+      {"user": "user123", "rating": 9, "comment": "Mind-blowing concept and execution!"},
+      {"user": "moviefan", "rating": 8, "comment": "Great visuals and storytelling."}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Shawshank Redemption",
+    "director": "Frank Darabont",
+    "year": 1994,
+    "genre": ["Drama"],
+    "rating": 9.3,
+    "duration": 142,
+    "price": 3.99,
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "image": "shawshank_redemption.jpg",
+    "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
+    "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler"],
+    "reviews": [
+      {"user": "cinephile", "rating": 10, "comment": "One of the greatest films ever made."},
+      {"user": "filmcritic", "rating": 9, "comment": "Powerful storytelling and performances."}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "year": 2008,
+    "genre": ["Action", "Crime", "Drama"],
+    "rating": 9.0,
+    "duration": 152,
+    "price": 4.99,
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "image": "dark_knight.jpg",
+    "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+    "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine"],
+    "reviews": [
+      {"user": "batfan", "rating": 10, "comment": "Heath Ledger's Joker is legendary!"},
+      {"user": "moviebuff", "rating": 9, "comment": "Redefines the superhero genre."}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Pulp Fiction",
+    "director": "Quentin Tarantino",
+    "year": 1994,
+    "genre": ["Crime", "Drama"],
+    "rating": 8.9,
+    "duration": 154,
+    "price": 3.99,
+    "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "image": "pulp_fiction.jpg",
+    "trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
+    "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson", "Bruce Willis"],
+    "reviews": [
+      {"user": "tarantinofan", "rating": 9, "comment": "Brilliant dialogue and structure!"},
+      {"user": "filmgeek", "rating": 8, "comment": "Iconic scenes and characters."}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "The Matrix",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "year": 1999,
+    "genre": ["Action", "Sci-Fi"],
+    "rating": 8.7,
+    "duration": 136,
+    "price": 3.99,
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "image": "matrix.jpg",
+    "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8",
+    "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving"],
+    "reviews": [
+      {"user": "scififan", "rating": 9, "comment": "Revolutionary visual effects and concept!"},
+      {"user": "neofan", "rating": 8, "comment": "Changed action movies forever."}
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Forrest Gump",
+    "director": "Robert Zemeckis",
+    "year": 1994,
+    "genre": ["Drama", "Romance"],
+    "rating": 8.8,
+    "duration": 142,
+    "price": 3.99,
+    "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
+    "image": "forrest_gump.jpg",
+    "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg",
+    "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise", "Sally Field"],
+    "reviews": [
+      {"user": "tomhanksfan", "rating": 10, "comment": "Tom Hanks at his absolute best!"},
+      {"user": "historybuff", "rating": 9, "comment": "Beautiful journey through American history."}
+    ]
+  },
+  {
+    "id": 7,
+    "title": "The Godfather",
+    "director": "Francis Ford Coppola",
+    "year": 1972,
+    "genre": ["Crime", "Drama"],
+    "rating": 9.2,
+    "duration": 175,
+    "price": 4.99,
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "image": "godfather.jpg",
+    "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
+    "actors": ["Marlon Brando", "Al Pacino", "James Caan", "Diane Keaton"],
+    "reviews": [
+      {"user": "mafiamovies", "rating": 10, "comment": "The definitive gangster film."},
+      {"user": "classicfilm", "rating": 9, "comment": "Masterpiece of cinema."}
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "rating": 8.6,
+    "duration": 169,
+    "price": 4.99,
+    "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "image": "interstellar.jpg",
+    "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+    "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine"],
+    "reviews": [
+      {"user": "spacefan", "rating": 9, "comment": "Visually stunning and emotionally powerful!"},
+      {"user": "sciencenerd", "rating": 8, "comment": "Great blend of science and emotion."}
+    ]
+  },
+  {
+    "id": 9,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "director": "Peter Jackson",
+    "year": 2001,
+    "genre": ["Adventure", "Fantasy", "Drama"],
+    "rating": 8.8,
+    "duration": 178,
+    "price": 4.99,
+    "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "image": "lotr_fellowship.jpg",
+    "trailer": "https://www.youtube.com/watch?v=V75dMMIW2B4",
+    "actors": ["Elijah Wood", "Ian McKellen", "Viggo Mortensen", "Sean Astin"],
+    "reviews": [
+      {"user": "tolkienfan", "rating": 10, "comment": "Perfect adaptation of Tolkien's masterpiece!"},
+      {"user": "fantasyfan", "rating": 9, "comment": "Epic start to an amazing trilogy."}
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Fight Club",
+    "director": "David Fincher",
+    "year": 1999,
+    "genre": ["Drama"],
+    "rating": 8.8,
+    "duration": 139,
+    "price": 3.99,
+    "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+    "image": "fight_club.jpg",
+    "trailer": "https://www.youtube.com/watch?v=SUXWAEX2jlg",
+    "actors": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter", "Meat Loaf"],
+    "reviews": [
+      {"user": "cultfilmfan", "rating": 9, "comment": "Mind-bending twist and social commentary!"},
+      {"user": "edgymovies", "rating": 8, "comment": "Brilliant direction and performances."}
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Goodfellas",
+    "director": "Martin Scorsese",
+    "year": 1990,
+    "genre": ["Biography", "Crime", "Drama"],
+    "rating": 8.7,
+    "duration": 146,
+    "price": 3.99,
+    "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+    "image": "goodfellas.jpg",
+    "trailer": "https://www.youtube.com/watch?v=qo5jJpHtI1Y",
+    "actors": ["Robert De Niro", "Ray Liotta", "Joe Pesci", "Lorraine Bracco"],
+    "reviews": [
+      {"user": "mobsterfan", "rating": 10, "comment": "The definitive mob movie of our time!"},
+      {"user": "filmhistorian", "rating": 9, "comment": "Scorsese at his absolute best."}
+    ]
+  },
+  {
+    "id": 12,
+    "title": "The Silence of the Lambs",
+    "director": "Jonathan Demme",
+    "year": 1991,
+    "genre": ["Crime", "Drama", "Thriller"],
+    "rating": 8.6,
+    "duration": 118,
+    "price": 3.99,
+    "description": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+    "image": "silence_of_the_lambs.jpg",
+    "trailer": "https://www.youtube.com/watch?v=W6Mm8Sbe__o",
+    "actors": ["Jodie Foster", "Anthony Hopkins", "Scott Glenn", "Ted Levine"],
+    "reviews": [
+      {"user": "thrillerlover", "rating": 10, "comment": "Hopkins' performance is chilling and unforgettable!"},
+      {"user": "horrorexpert", "rating": 9, "comment": "Perfect blend of psychological horror and crime thriller."}
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Schindler's List",
+    "director": "Steven Spielberg",
+    "year": 1993,
+    "genre": ["Biography", "Drama", "History"],
+    "rating": 8.9,
+    "duration": 195,
+    "price": 4.99,
+    "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+    "image": "schindlers_list.jpg",
+    "trailer": "https://www.youtube.com/watch?v=gG22XNhtnoY",
+    "actors": ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley", "Caroline Goodall"],
+    "reviews": [
+      {"user": "historyteacher", "rating": 10, "comment": "Essential viewing for understanding the Holocaust."},
+      {"user": "cinemacritic", "rating": 10, "comment": "Spielberg's masterpiece - powerful and devastating."}
+    ]
+  },
+  {
+    "id": 14,
+    "title": "The Departed",
+    "director": "Martin Scorsese",
+    "year": 2006,
+    "genre": ["Crime", "Drama", "Thriller"],
+    "rating": 8.5,
+    "duration": 151,
+    "price": 4.99,
+    "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+    "image": "departed.jpg",
+    "trailer": "https://www.youtube.com/watch?v=iojhqm0JTW4",
+    "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson", "Mark Wahlberg"],
+    "reviews": [
+      {"user": "crimefan", "rating": 9, "comment": "Brilliant performances and tense storytelling!"},
+      {"user": "bostonlocal", "rating": 8, "comment": "Great depiction of Boston's criminal underworld."}
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Gladiator",
+    "director": "Ridley Scott",
+    "year": 2000,
+    "genre": ["Action", "Adventure", "Drama"],
+    "rating": 8.5,
+    "duration": 155,
+    "price": 3.99,
+    "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "image": "gladiator.jpg",
+    "trailer": "https://www.youtube.com/watch?v=owK1qxDselE",
+    "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen", "Oliver Reed"],
+    "reviews": [
+      {"user": "historybuff", "rating": 9, "comment": "Epic storytelling and memorable performances!"},
+      {"user": "actionfan", "rating": 8, "comment": "Perfect blend of action and drama."}
+    ]
+  },
+  {
+    "id": 16,
+    "title": "The Green Mile",
+    "director": "Frank Darabont",
+    "year": 1999,
+    "genre": ["Crime", "Drama", "Fantasy"],
+    "rating": 8.6,
+    "duration": 189,
+    "price": 3.99,
+    "description": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+    "image": "green_mile.jpg",
+    "trailer": "https://www.youtube.com/watch?v=Ki4haFrqSrw",
+    "actors": ["Tom Hanks", "Michael Clarke Duncan", "David Morse", "Bonnie Hunt"],
+    "reviews": [
+      {"user": "emotionalviewer", "rating": 10, "comment": "One of the most moving films ever made!"},
+      {"user": "kingfan", "rating": 9, "comment": "Beautiful adaptation of Stephen King's novel."}
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Saving Private Ryan",
+    "director": "Steven Spielberg",
+    "year": 1998,
+    "genre": ["Drama", "War"],
+    "rating": 8.6,
+    "duration": 169,
+    "price": 4.99,
+    "description": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+    "image": "saving_private_ryan.jpg",
+    "trailer": "https://www.youtube.com/watch?v=9CiW_DgxCnQ",
+    "actors": ["Tom Hanks", "Matt Damon", "Tom Sizemore", "Edward Burns"],
+    "reviews": [
+      {"user": "warbuff", "rating": 10, "comment": "Most realistic war scenes ever filmed!"},
+      {"user": "historyprofessor", "rating": 9, "comment": "Powerful portrayal of the human cost of war."}
+    ]
+  },
+  {
+    "id": 18,
+    "title": "The Prestige",
+    "director": "Christopher Nolan",
+    "year": 2006,
+    "genre": ["Drama", "Mystery", "Sci-Fi"],
+    "rating": 8.5,
+    "duration": 130,
+    "price": 3.99,
+    "description": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+    "image": "prestige.jpg",
+    "trailer": "https://www.youtube.com/watch?v=o4gHCmTQDVI",
+    "actors": ["Christian Bale", "Hugh Jackman", "Scarlett Johansson", "Michael Caine"],
+    "reviews": [
+      {"user": "mysteryfan", "rating": 9, "comment": "Brilliant twists and turns throughout!"},
+      {"user": "nolanite", "rating": 10, "comment": "One of Nolan's most underrated masterpieces."}
+    ]
+  },
+  {
+    "id": 19,
+    "title": "The Lion King",
+    "director": "Roger Allers, Rob Minkoff",
+    "year": 1994,
+    "genre": ["Animation", "Adventure", "Drama"],
+    "rating": 8.5,
+    "duration": 88,
+    "price": 3.99,
+    "description": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+    "image": "lion_king.jpg",
+    "trailer": "https://www.youtube.com/watch?v=4sj1MT05lAA",
+    "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones", "Whoopi Goldberg"],
+    "reviews": [
+      {"user": "disneyfan", "rating": 10, "comment": "Disney's greatest animated film!"},
+      {"user": "familyviewer", "rating": 9, "comment": "Perfect for all ages with timeless themes."}
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Jurassic Park",
+    "director": "Steven Spielberg",
+    "year": 1993,
+    "genre": ["Adventure", "Sci-Fi", "Thriller"],
+    "rating": 8.1,
+    "duration": 127,
+    "price": 3.99,
+    "description": "A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+    "image": "jurassic_park.jpg",
+    "trailer": "https://www.youtube.com/watch?v=QWBKEmWWL38",
+    "actors": ["Sam Neill", "Laura Dern", "Jeff Goldblum", "Richard Attenborough"],
+    "reviews": [
+      {"user": "dinofan", "rating": 9, "comment": "Revolutionary special effects that still hold up!"},
+      {"user": "90skid", "rating": 8, "comment": "Defined a generation of adventure films."}
+    ]
+  },
+  {
+    "id": 21,
+    "title": "The Avengers",
+    "director": "Joss Whedon",
+    "year": 2012,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "rating": 8.0,
+    "duration": 143,
+    "price": 4.99,
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "image": "avengers.jpg",
+    "trailer": "https://www.youtube.com/watch?v=eOrNdBpGMv8",
+    "actors": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson", "Mark Ruffalo"],
+    "reviews": [
+      {"user": "marvelfan", "rating": 9, "comment": "The perfect superhero team-up movie!"},
+      {"user": "comicbookreader", "rating": 8, "comment": "Brought the MCU together brilliantly."}
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Titanic",
+    "director": "James Cameron",
+    "year": 1997,
+    "genre": ["Drama", "Romance"],
+    "rating": 7.9,
+    "duration": 194,
+    "price": 3.99,
+    "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    "image": "titanic.jpg",
+    "trailer": "https://www.youtube.com/watch?v=kVrqfYjkTdQ",
+    "actors": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Kathy Bates"],
+    "reviews": [
+      {"user": "romancefan", "rating": 9, "comment": "A timeless love story with spectacular visuals!"},
+      {"user": "historybuff", "rating": 8, "comment": "Great blend of historical event and fictional narrative."}
+    ]
+  },
+  {
+    "id": 23,
+    "title": "The Social Network",
+    "director": "David Fincher",
+    "year": 2010,
+    "genre": ["Biography", "Drama"],
+    "rating": 7.8,
+    "duration": 120,
+    "price": 3.99,
+    "description": "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea, and by the co-founder who was later squeezed out of the business.",
+    "image": "social_network.jpg",
+    "trailer": "https://www.youtube.com/watch?v=lB95KLmpLR4",
+    "actors": ["Jesse Eisenberg", "Andrew Garfield", "Justin Timberlake", "Rooney Mara"],
+    "reviews": [
+      {"user": "techie", "rating": 9, "comment": "Brilliant portrayal of the birth of social media!"},
+      {"user": "filmcritic", "rating": 8, "comment": "Fincher and Sorkin create magic together."}
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Avatar",
+    "director": "James Cameron",
+    "year": 2009,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "rating": 7.8,
+    "duration": 162,
+    "price": 4.99,
+    "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "image": "avatar.jpg",
+    "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+    "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver", "Stephen Lang"],
+    "reviews": [
+      {"user": "3dfan", "rating": 9, "comment": "Revolutionary visual effects and world-building!"},
+      {"user": "scififan", "rating": 8, "comment": "Immersive alien world with environmental message."}
+    ]
+  },
+  {
+    "id": 25,
+    "title": "The Truman Show",
+    "director": "Peter Weir",
+    "year": 1998,
+    "genre": ["Comedy", "Drama", "Sci-Fi"],
+    "rating": 8.1,
+    "duration": 103,
+    "price": 3.99,
+    "description": "An insurance salesman discovers his whole life is actually a reality TV show.",
+    "image": "truman_show.jpg",
+    "trailer": "https://www.youtube.com/watch?v=dlnmQbPGuls",
+    "actors": ["Jim Carrey", "Laura Linney", "Noah Emmerich", "Natascha McElhone"],
+    "reviews": [
+      {"user": "jimcarreyfan", "rating": 9, "comment": "Carrey's best dramatic performance!"},
+      {"user": "philosophymajor", "rating": 10, "comment": "Profound exploration of reality and media."}
+    ]
+  },
+  {
+    "id": 26,
+    "title": "The Grand Budapest Hotel",
+    "director": "Wes Anderson",
+    "year": 2014,
+    "genre": ["Adventure", "Comedy", "Crime"],
+    "rating": 8.1,
+    "duration": 99,
+    "price": 3.99,
+    "description": "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge.",
+    "image": "grand_budapest.jpg",
+    "trailer": "https://www.youtube.com/watch?v=1Fg5iWmQjwk",
+    "actors": ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric", "Adrien Brody"],
+    "reviews": [
+      {"user": "andersonfan", "rating": 10, "comment": "Perfect Wes Anderson style and storytelling!"},
+      {"user": "visualarts", "rating": 9, "comment": "A visual feast with incredible attention to detail."}
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "director": "Michel Gondry",
+    "year": 2004,
+    "genre": ["Drama", "Romance", "Sci-Fi"],
+    "rating": 8.3,
+    "duration": 108,
+    "price": 3.99,
+    "description": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
+    "image": "eternal_sunshine.jpg",
+    "trailer": "https://www.youtube.com/watch?v=07-QBnEkgXU",
+    "actors": ["Jim Carrey", "Kate Winslet", "Tom Wilkinson", "Gerry Robert Byrne"],
+    "reviews": [
+      {"user": "romancefan", "rating": 10, "comment": "The most unique love story ever filmed!"},
+      {"user": "artfilmbuff", "rating": 9, "comment": "Brilliant concept with emotional depth."}
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Whiplash",
+    "director": "Damien Chazelle",
+    "year": 2014,
+    "genre": ["Drama", "Music"],
+    "rating": 8.5,
+    "duration": 106,
+    "price": 3.99,
+    "description": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
+    "image": "whiplash.jpg",
+    "trailer": "https://www.youtube.com/watch?v=7d_jQycdQGo",
+    "actors": ["Miles Teller", "J.K. Simmons", "Melissa Benoist", "Paul Reiser"],
+    "reviews": [
+      {"user": "jazzfan", "rating": 10, "comment": "Simmons delivers one of the greatest performances ever!"},
+      {"user": "musiclover", "rating": 9, "comment": "Intense, gripping, and perfectly paced."}
+    ]
+  },
+  {
+    "id": 29,
+    "title": "The Shining",
+    "director": "Stanley Kubrick",
+    "year": 1980,
+    "genre": ["Drama", "Horror"],
+    "rating": 8.4,
+    "duration": 146,
+    "price": 3.99,
+    "description": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
+    "image": "shining.jpg",
+    "trailer": "https://www.youtube.com/watch?v=5Cb3ik6zP2I",
+    "actors": ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd", "Scatman Crothers"],
+    "reviews": [
+      {"user": "horrorfan", "rating": 10, "comment": "The definition of psychological horror!"},
+      {"user": "kubrickfan", "rating": 9, "comment": "Masterful direction and unforgettable imagery."}
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Parasite",
+    "director": "Bong Joon Ho",
+    "year": 2019,
+    "genre": ["Comedy", "Drama", "Thriller"],
+    "rating": 8.6,
+    "duration": 132,
+    "price": 4.99,
+    "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+    "image": "parasite.jpg",
+    "trailer": "https://www.youtube.com/watch?v=5xH0HfJHsaY",
+    "actors": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong", "Choi Woo-shik"],
+    "reviews": [
+      {"user": "cinephile", "rating": 10, "comment": "A perfect blend of genres with social commentary!"},
+      {"user": "foreignfilmfan", "rating": 9, "comment": "Deserving of all its accolades and more."}
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Spirited Away",
+    "director": "Hayao Miyazaki",
+    "year": 2001,
+    "genre": ["Animation", "Adventure", "Family"],
+    "rating": 8.6,
+    "duration": 125,
+    "price": 3.99,
+    "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+    "image": "spirited_away.jpg",
+    "trailer": "https://www.youtube.com/watch?v=ByXuk9QqQkk",
+    "actors": ["Daveigh Chase", "Suzanne Pleshette", "Miyu Irino", "Rumi Hiiragi"],
+    "reviews": [
+      {"user": "animefan", "rating": 10, "comment": "Miyazaki's greatest masterpiece!"},
+      {"user": "familyviewer", "rating": 9, "comment": "Magical storytelling for all ages."}
+    ]
+  },
+  {
+    "id": 32,
+    "title": "The Revenant",
+    "director": "Alejandro González Iñárritu",
+    "year": 2015,
+    "genre": ["Action", "Adventure", "Drama"],
+    "rating": 8.0,
+    "duration": 156,
+    "price": 4.99,
+    "description": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
+    "image": "revenant.jpg",
+    "trailer": "https://www.youtube.com/watch?v=LoebZZ8K5N0",
+    "actors": ["Leonardo DiCaprio", "Tom Hardy", "Will Poulter", "Domhnall Gleeson"],
+    "reviews": [
+      {"user": "oscarbuff", "rating": 9, "comment": "DiCaprio's Oscar-winning performance is incredible!"},
+      {"user": "cinematography", "rating": 10, "comment": "Some of the most stunning visuals ever filmed."}
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Inglourious Basterds",
+    "director": "Quentin Tarantino",
+    "year": 2009,
+    "genre": ["Adventure", "Drama", "War"],
+    "rating": 8.3,
+    "duration": 153,
+    "price": 3.99,
+    "description": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
+    "image": "inglourious_basterds.jpg",
+    "trailer": "https://www.youtube.com/watch?v=KnrRy6kSFF0",
+    "actors": ["Brad Pitt", "Diane Kruger", "Eli Roth", "Mélanie Laurent"],
+    "reviews": [
+      {"user": "tarantinofan", "rating": 9, "comment": "Tarantino's alternate history masterpiece!"},
+      {"user": "filmhistorian", "rating": 8, "comment": "Brilliant tension and unforgettable characters."}
+    ]
+  },
+  {
+    "id": 34,
+    "title": "The Wolf of Wall Street",
+    "director": "Martin Scorsese",
+    "year": 2013,
+    "genre": ["Biography", "Comedy", "Crime"],
+    "rating": 8.2,
+    "duration": 180,
+    "price": 4.99,
+    "description": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+    "image": "wolf_of_wall_street.jpg",
+    "trailer": "https://www.youtube.com/watch?v=iszwuX1AK6A",
+    "actors": ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie", "Matthew McConaughey"],
+    "reviews": [
+      {"user": "financebro", "rating": 9, "comment": "Excessive, outrageous, and absolutely brilliant!"},
+      {"user": "scorsesefan", "rating": 8, "comment": "DiCaprio and Scorsese at their most unhinged."}
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Blade Runner 2049",
+    "director": "Denis Villeneuve",
+    "year": 2017,
+    "genre": ["Action", "Drama", "Mystery"],
+    "rating": 8.0,
+    "duration": 164,
+    "price": 4.99,
+    "description": "Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.",
+    "image": "blade_runner_2049.jpg",
+    "trailer": "https://www.youtube.com/watch?v=gCcx85zbxz4",
+    "actors": ["Ryan Gosling", "Harrison Ford", "Ana de Armas", "Sylvia Hoeks"],
+    "reviews": [
+      {"user": "scififan", "rating": 9, "comment": "A worthy sequel that expands on the original!"},
+      {"user": "cinematography", "rating": 10, "comment": "Roger Deakins' Oscar-winning visuals are breathtaking."}
+    ]
+  },
+  {
+    "id": 36,
+    "title": "La La Land",
+    "director": "Damien Chazelle",
+    "year": 2016,
+    "genre": ["Comedy", "Drama", "Music"],
+    "rating": 8.0,
+    "duration": 128,
+    "price": 3.99,
+    "description": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
+    "image": "la_la_land.jpg",
+    "trailer": "https://www.youtube.com/watch?v=0pdqf4P9MB8",
+    "actors": ["Ryan Gosling", "Emma Stone", "Rosemarie DeWitt", "J.K. Simmons"],
+    "reviews": [
+      {"user": "musicallover", "rating": 9, "comment": "A beautiful modern musical with heart!"},
+      {"user": "jazzfan", "rating": 8, "comment": "Great performances and memorable songs."}
+    ]
+  },
+  {
+    "id": 37,
+    "title": "The Sixth Sense",
+    "director": "M. Night Shyamalan",
+    "year": 1999,
+    "genre": ["Drama", "Mystery", "Thriller"],
+    "rating": 8.1,
+    "duration": 107,
+    "price": 3.99,
+    "description": "A boy who communicates with spirits seeks the help of a disheartened child psychologist.",
+    "image": "sixth_sense.jpg",
+    "trailer": "https://www.youtube.com/watch?v=VG9AGf66tXM",
+    "actors": ["Bruce Willis", "Haley Joel Osment", "Toni Collette", "Olivia Williams"],
+    "reviews": [
+      {"user": "twistending", "rating": 10, "comment": "The twist that defined a generation of thrillers!"},
+      {"user": "horrorfan", "rating": 9, "comment": "Perfectly crafted supernatural thriller."}
+    ]
+  },
+  {
+    "id": 38,
+    "title": "The Martian",
+    "director": "Ridley Scott",
+    "year": 2015,
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "rating": 8.0,
+    "duration": 144,
+    "price": 4.99,
+    "description": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
+    "image": "martian.jpg",
+    "trailer": "https://www.youtube.com/watch?v=ej3ioOneTy8",
+    "actors": ["Matt Damon", "Jessica Chastain", "Kristen Wiig", "Jeff Daniels"],
+    "reviews": [
+      {"user": "sciencenerd", "rating": 9, "comment": "The most scientifically accurate space film!"},
+      {"user": "scififan", "rating": 8, "comment": "Damon's performance carries this survival story."}
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Memento",
+    "director": "Christopher Nolan",
+    "year": 2000,
+    "genre": ["Mystery", "Thriller"],
+    "rating": 8.4,
+    "duration": 113,
+    "price": 3.99,
+    "description": "A man with short-term memory loss attempts to track down his wife's murderer.",
+    "image": "memento.jpg",
+    "trailer": "https://www.youtube.com/watch?v=4CV41hoyS8A",
+    "actors": ["Guy Pearce", "Carrie-Anne Moss", "Joe Pantoliano", "Mark Boone Junior"],
+    "reviews": [
+      {"user": "nolanfan", "rating": 10, "comment": "Nolan's breakthrough film is still his most innovative!"},
+      {"user": "mysteryfan", "rating": 9, "comment": "Brilliant narrative structure and concept."}
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Casablanca",
+    "director": "Michael Curtiz",
+    "year": 1942,
+    "genre": ["Drama", "Romance", "War"],
+    "rating": 8.5,
+    "duration": 102,
+    "price": 3.99,
+    "description": "A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis in French Morocco.",
+    "image": "casablanca.jpg",
+    "trailer": "https://www.youtube.com/watch?v=BkL9l7qovsE",
+    "actors": ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid", "Claude Rains"],
+    "reviews": [
+      {"user": "classicfilmbuff", "rating": 10, "comment": "The definition of a perfect classic film!"},
+      {"user": "filmhistorian", "rating": 10, "comment": "Timeless romance with unforgettable dialogue."}
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Joker",
+    "director": "Todd Phillips",
+    "year": 2019,
+    "genre": ["Crime", "Drama", "Thriller"],
+    "rating": 8.4,
+    "duration": 122,
+    "price": 4.99,
+    "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+    "image": "joker.jpg",
+    "trailer": "https://www.youtube.com/watch?v=zAGVQLHvwOY",
+    "actors": ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz", "Frances Conroy"],
+    "reviews": [
+      {"user": "comicbookfan", "rating": 9, "comment": "Phoenix delivers a haunting, Oscar-worthy performance!"},
+      {"user": "filmcritic", "rating": 8, "comment": "Dark, disturbing, and thought-provoking."}
+    ]
+  },
+  {
+    "id": 42,
+    "title": "The Pianist",
+    "director": "Roman Polanski",
+    "year": 2002,
+    "genre": ["Biography", "Drama", "Music"],
+    "rating": 8.5,
+    "duration": 150,
+    "price": 3.99,
+    "description": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
+    "image": "pianist.jpg",
+    "trailer": "https://www.youtube.com/watch?v=BFwGqLa_oAo",
+    "actors": ["Adrien Brody", "Thomas Kretschmann", "Frank Finlay", "Emilia Fox"],
+    "reviews": [
+      {"user": "historybuff", "rating": 10, "comment": "Brody's performance is devastating and powerful!"},
+      {"user": "musiclover", "rating": 9, "comment": "A haunting portrayal of survival through art."}
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Braveheart",
+    "director": "Mel Gibson",
+    "year": 1995,
+    "genre": ["Biography", "Drama", "History"],
+    "rating": 8.3,
+    "duration": 178,
+    "price": 3.99,
+    "description": "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
+    "image": "braveheart.jpg",
+    "trailer": "https://www.youtube.com/watch?v=1NJO0jxBtMo",
+    "actors": ["Mel Gibson", "Sophie Marceau", "Patrick McGoohan", "Angus Macfadyen"],
+    "reviews": [
+      {"user": "historyfan", "rating": 9, "comment": "Epic historical drama with unforgettable battle scenes!"},
+      {"user": "actionbuff", "rating": 8, "comment": "Gibson's direction and performance are outstanding."}
+    ]
+  },
+  {
+    "id": 44,
+    "title": "The Princess Bride",
+    "director": "Rob Reiner",
+    "year": 1987,
+    "genre": ["Adventure", "Family", "Fantasy"],
+    "rating": 8.0,
+    "duration": 98,
+    "price": 3.99,
+    "description": "While home sick in bed, a young boy's grandfather reads him the story of a farmboy-turned-pirate who encounters numerous obstacles, enemies and allies in his quest to be reunited with his true love.",
+    "image": "princess_bride.jpg",
+    "trailer": "https://www.youtube.com/watch?v=O3CIXEAjcc8",
+    "actors": ["Cary Elwes", "Mandy Patinkin", "Robin Wright", "Chris Sarandon"],
+    "reviews": [
+      {"user": "cultclassic", "rating": 10, "comment": "The perfect blend of comedy, romance, and adventure!"},
+      {"user": "familyviewer", "rating": 9, "comment": "Endlessly quotable and charming for all ages."}
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Good Will Hunting",
+    "director": "Gus Van Sant",
+    "year": 1997,
+    "genre": ["Drama", "Romance"],
+    "rating": 8.3,
+    "duration": 126,
+    "price": 3.99,
+    "description": "Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.",
+    "image": "good_will_hunting.jpg",
+    "trailer": "https://www.youtube.com/watch?v=ReIJ1lbL-Q8",
+    "actors": ["Robin Williams", "Matt Damon", "Ben Affleck", "Stellan Skarsgård"],
+    "reviews": [
+      {"user": "dramafan", "rating": 10, "comment": "Williams and Damon create magic together!"},
+      {"user": "bostonlocal", "rating": 9, "comment": "A touching story about potential and healing."}
+    ]
+  },
+  {
+    "id": 46,
+    "title": "The Usual Suspects",
+    "director": "Bryan Singer",
+    "year": 1995,
+    "genre": ["Crime", "Mystery", "Thriller"],
+    "rating": 8.5,
+    "duration": 106,
+    "price": 3.99,
+    "description": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+    "image": "usual_suspects.jpg",
+    "trailer": "https://www.youtube.com/watch?v=oiXdPolca5w",
+    "actors": ["Kevin Spacey", "Gabriel Byrne", "Chazz Palminteri", "Stephen Baldwin"],
+    "reviews": [
+      {"user": "twistending", "rating": 10, "comment": "One of the greatest twist endings in cinema!"},
+      {"user": "mysteryfan", "rating": 9, "comment": "Brilliant storytelling that rewards multiple viewings."}
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Alien",
+    "director": "Ridley Scott",
+    "year": 1979,
+    "genre": ["Horror", "Sci-Fi"],
+    "rating": 8.4,
+    "duration": 117,
+    "price": 3.99,
+    "description": "After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.",
+    "image": "alien.jpg",
+    "trailer": "https://www.youtube.com/watch?v=LjLamj-b0I8",
+    "actors": ["Sigourney Weaver", "Tom Skerritt", "John Hurt", "Ian Holm"],
+    "reviews": [
+      {"user": "scififan", "rating": 10, "comment": "The perfect blend of sci-fi and horror!"},
+      {"user": "horrorbuff", "rating": 9, "comment": "Atmospheric, tense, and still terrifying today."}
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Amélie",
+    "director": "Jean-Pierre Jeunet",
+    "year": 2001,
+    "genre": ["Comedy", "Romance"],
+    "rating": 8.3,
+    "duration": 122,
+    "price": 3.99,
+    "description": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.",
+    "image": "amelie.jpg",
+    "trailer": "https://www.youtube.com/watch?v=HUECWi5pX7o",
+    "actors": ["Audrey Tautou", "Mathieu Kassovitz", "Rufus", "Lorella Cravotta"],
+    "reviews": [
+      {"user": "frenchcinema", "rating": 10, "comment": "A whimsical, colorful, and heartwarming masterpiece!"},
+      {"user": "romancefan", "rating": 9, "comment": "Tautou's performance is utterly charming."}
+    ]
+  },
+  {
+    "id": 49,
+    "title": "The Big Lebowski",
+    "director": "Joel Coen, Ethan Coen",
+    "year": 1998,
+    "genre": ["Comedy", "Crime"],
+    "rating": 8.1,
+    "duration": 117,
+    "price": 3.99,
+    "description": "Jeff 'The Dude' Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.",
+    "image": "big_lebowski.jpg",
+    "trailer": "https://www.youtube.com/watch?v=cd-go0oBF4Y",
+    "actors": ["Jeff Bridges", "John Goodman", "Julianne Moore", "Steve Buscemi"],
+    "reviews": [
+      {"user": "cultfilmfan", "rating": 10, "comment": "The Coen brothers' funniest and most quotable film!"},
+      {"user": "comedyfan", "rating": 9, "comment": "Bridges IS The Dude, and The Dude abides."}
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Oldboy",
+    "director": "Park Chan-wook",
+    "year": 2003,
+    "genre": ["Action", "Drama", "Mystery"],
+    "rating": 8.4,
+    "duration": 120,
+    "price": 3.99,
+    "description": "After being kidnapped and imprisoned for fifteen years, Oh Dae-Su is released, only to find that he must find his captor in five days.",
+    "image": "oldboy.jpg",
+    "trailer": "https://www.youtube.com/watch?v=2HkjrJ6IK5E",
+    "actors": ["Choi Min-sik", "Yoo Ji-tae", "Kang Hye-jung", "Kim Byeong-Ok"],
+    "reviews": [
+      {"user": "koreancinema", "rating": 10, "comment": "A masterpiece of revenge cinema with an unforgettable twist!"},
+      {"user": "actionfan", "rating": 9, "comment": "The corridor fight scene alone is worth the watch."}
+    ]
+  }
+]
