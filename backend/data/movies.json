@@ -898,5 +898,185 @@
       {"user": "koreancinema", "rating": 10, "comment": "A masterpiece of revenge cinema with an unforgettable twist!"},
       {"user": "actionfan", "rating": 9, "comment": "The corridor fight scene alone is worth the watch."}
     ]
+  },
+  {
+    "id": 51,
+    "title": "Dune: Part Two",
+    "director": "Denis Villeneuve",
+    "year": 2024,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "rating": 8.7,
+    "duration": 166,
+    "price": 5.99,
+    "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
+    "image": "dune_part_two.jpg",
+    "trailer": "https://www.youtube.com/watch?v=Way9Dexny3w",
+    "actors": ["Timothée Chalamet", "Zendaya", "Rebecca Ferguson", "Javier Bardem"],
+    "reviews": [
+      {"user": "scififan", "rating": 9, "comment": "Even better than the first part with breathtaking visuals!"},
+      {"user": "bookadapter", "rating": 10, "comment": "A faithful and spectacular adaptation of Herbert's vision."}
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Oppenheimer",
+    "director": "Christopher Nolan",
+    "year": 2023,
+    "genre": ["Biography", "Drama", "History"],
+    "rating": 8.5,
+    "duration": 180,
+    "price": 4.99,
+    "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II, exploring the moral complexities and consequences of his work.",
+    "image": "oppenheimer.jpg",
+    "trailer": "https://www.youtube.com/watch?v=uYPbbksJxIg",
+    "actors": ["Cillian Murphy", "Emily Blunt", "Matt Damon", "Robert Downey Jr."],
+    "reviews": [
+      {"user": "historybuff", "rating": 10, "comment": "A masterful portrayal of one of history's most complex figures!"},
+      {"user": "nolanfan", "rating": 9, "comment": "Nolan's most mature and thought-provoking film to date."}
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Everything Everywhere All at Once",
+    "director": "Daniel Kwan, Daniel Scheinert",
+    "year": 2022,
+    "genre": ["Action", "Adventure", "Comedy"],
+    "rating": 8.0,
+    "duration": 139,
+    "price": 4.99,
+    "description": "A middle-aged Chinese immigrant is swept up in an insane adventure where she alone can save existence by exploring other universes and connecting with the lives she could have led.",
+    "image": "everything_everywhere.jpg",
+    "trailer": "https://www.youtube.com/watch?v=wxN1T1uxQ2g",
+    "actors": ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan", "Jamie Lee Curtis"],
+    "reviews": [
+      {"user": "indiefilmfan", "rating": 10, "comment": "A mind-bending masterpiece that defies categorization!"},
+      {"user": "asiancinema", "rating": 9, "comment": "Michelle Yeoh delivers the performance of her career."}
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Gladiator II",
+    "director": "Ridley Scott",
+    "year": 2024,
+    "genre": ["Action", "Adventure", "Drama"],
+    "rating": 8.3,
+    "duration": 158,
+    "price": 5.99,
+    "description": "Years after witnessing the death of the revered hero Maximus at the hands of his uncle, Lucius is forced to enter the Colosseum as a gladiator while the Roman Empire is in decline.",
+    "image": "gladiator_2.jpg",
+    "trailer": "https://www.youtube.com/watch?v=L_EWOKJj9V8",
+    "actors": ["Paul Mescal", "Denzel Washington", "Pedro Pascal", "Connie Nielsen"],
+    "reviews": [
+      {"user": "historybuff", "rating": 9, "comment": "A worthy successor to the original epic!"},
+      {"user": "actionfan", "rating": 8, "comment": "Spectacular battle sequences and compelling characters."}
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Furiosa: A Mad Max Saga",
+    "director": "George Miller",
+    "year": 2024,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "rating": 8.2,
+    "duration": 148,
+    "price": 5.99,
+    "description": "The origin story of renegade warrior Furiosa before her encounter with Max Rockatansky in 'Mad Max: Fury Road', following her journey as she is taken from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus.",
+    "image": "furiosa.jpg",
+    "trailer": "https://www.youtube.com/watch?v=XdKzUbAiswE",
+    "actors": ["Anya Taylor-Joy", "Chris Hemsworth", "Tom Burke", "Alyla Browne"],
+    "reviews": [
+      {"user": "actionfan", "rating": 9, "comment": "Miller delivers another high-octane masterpiece!"},
+      {"user": "postapocalyptic", "rating": 8, "comment": "Visually stunning with incredible practical effects."}
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Inside Out 2",
+    "director": "Kelsey Mann",
+    "year": 2024,
+    "genre": ["Animation", "Adventure", "Comedy"],
+    "rating": 8.4,
+    "duration": 96,
+    "price": 4.99,
+    "description": "As Riley enters her teenage years, her emotions face a major upheaval when new emotions arrive, including Anxiety, Envy, Ennui, and Embarrassment, causing chaos in Headquarters.",
+    "image": "inside_out_2.jpg",
+    "trailer": "https://www.youtube.com/watch?v=sC-JlEVpE-I",
+    "actors": ["Amy Poehler", "Maya Hawke", "Kensington Tallman", "Liza Lapira"],
+    "reviews": [
+      {"user": "pixarfan", "rating": 9, "comment": "Perfectly captures the emotional rollercoaster of adolescence!"},
+      {"user": "familyviewer", "rating": 10, "comment": "Even better than the first with deeper emotional resonance."}
+    ]
+  },
+  {
+    "id": 57,
+    "title": "The Batman",
+    "director": "Matt Reeves",
+    "year": 2022,
+    "genre": ["Action", "Crime", "Drama"],
+    "rating": 7.9,
+    "duration": 176,
+    "price": 4.99,
+    "description": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+    "image": "the_batman.jpg",
+    "trailer": "https://www.youtube.com/watch?v=mqqft2x_Aa4",
+    "actors": ["Robert Pattinson", "Zoë Kravitz", "Jeffrey Wright", "Colin Farrell"],
+    "reviews": [
+      {"user": "batfan", "rating": 9, "comment": "The most noir and detective-focused Batman film yet!"},
+      {"user": "comicbookfan", "rating": 8, "comment": "Pattinson brings a fresh, brooding intensity to the role."}
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Kingdom of the Planet of the Apes",
+    "director": "Wes Ball",
+    "year": 2024,
+    "genre": ["Action", "Adventure", "Drama"],
+    "rating": 7.8,
+    "duration": 145,
+    "price": 5.99,
+    "description": "Many years after the reign of Caesar, a young ape goes on a journey that will lead him to question everything he's been taught about the past and make choices that will define a future for apes and humans alike.",
+    "image": "kingdom_apes.jpg",
+    "trailer": "https://www.youtube.com/watch?v=6V-5mJxrFxI",
+    "actors": ["Owen Teague", "Freya Allan", "Kevin Durand", "Peter Macon"],
+    "reviews": [
+      {"user": "scififan", "rating": 8, "comment": "A worthy continuation of the rebooted franchise!"},
+      {"user": "visualeffects", "rating": 9, "comment": "The ape performances and effects are more impressive than ever."}
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Deadpool & Wolverine",
+    "director": "Shawn Levy",
+    "year": 2024,
+    "genre": ["Action", "Adventure", "Comedy"],
+    "rating": 8.6,
+    "duration": 127,
+    "price": 5.99,
+    "description": "Deadpool's peaceful existence comes crashing down when the Time Variance Authority recruits him to team up with a reluctant Wolverine for a mission that will change the Marvel Cinematic Universe forever.",
+    "image": "deadpool_wolverine.jpg",
+    "trailer": "https://www.youtube.com/watch?v=4sU_Hp4JRxM",
+    "actors": ["Ryan Reynolds", "Hugh Jackman", "Emma Corrin", "Morena Baccarin"],
+    "reviews": [
+      {"user": "marvelfan", "rating": 10, "comment": "The perfect R-rated superhero team-up we've been waiting for!"},
+      {"user": "comedyfan", "rating": 9, "comment": "Hilarious, violent, and surprisingly emotional."}
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Alien: Romulus",
+    "director": "Fede Álvarez",
+    "year": 2025,
+    "genre": ["Horror", "Sci-Fi", "Thriller"],
+    "rating": 8.1,
+    "duration": 119,
+    "price": 5.99,
+    "description": "A group of young space colonizers come face to face with the most terrifying life form in the universe while scavenging the deep ends of a derelict space station.",
+    "image": "alien_romulus.jpg",
+    "trailer": "https://www.youtube.com/watch?v=osD1gEFYyI4",
+    "actors": ["Cailee Spaeny", "David Jonsson", "Archie Renaux", "Isabela Merced"],
+    "reviews": [
+      {"user": "alienfan", "rating": 9, "comment": "A return to the terrifying roots of the franchise!"},
+      {"user": "horrorfan", "rating": 8, "comment": "Tense, claustrophobic, and genuinely scary."}
+    ]
   }
 ]
