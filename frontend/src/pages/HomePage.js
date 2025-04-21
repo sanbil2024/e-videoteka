@@ -9,6 +9,7 @@ const HomePage = ({ addToCart, user }) => {
   const [newMovies, setNewMovies] = useState([]);
   const [topRatedMovies, setTopRatedMovies] = useState([]);
   const [personalizedRecommendations, setPersonalizedRecommendations] = useState([]);
+  const [trendingMovies, setTrendingMovies] = useState([]);
   const [allGenres, setAllGenres] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -21,25 +22,34 @@ const HomePage = ({ addToCart, user }) => {
         setMovies(data);
         setFilteredMovies(data);
 
-        // Sort by year (descending) for new movies
         const sortedByYear = [...data].sort((a, b) => b.year - a.year);
         setNewMovies(sortedByYear.slice(0, 5));
 
-        // Sort by rating (descending) for top rated
         const sortedByRating = [...data].sort((a, b) => b.rating - a.rating);
         setTopRatedMovies(sortedByRating.slice(0, 5));
 
-        // Generiraj sve dostupne žanrove
         const genres = [...new Set(data.flatMap(movie => movie.genre))];
         setAllGenres(genres);
 
-        // Preporuke ako je user logiran
         if (user) {
-          const userPreferredGenres = ['Action', 'Sci-Fi', 'Drama'];
-          const recommendations = data.filter(movie =>
-            movie.genre.some(genre => userPreferredGenres.includes(genre))
-          ).slice(0, 5);
-          setPersonalizedRecommendations(recommendations);
+          try {
+            const config = {
+              headers: {
+                Authorization: `Bearer ${user.token}`
+              }
+            };
+            const res = await axios.get('http://localhost:5000/api/recommendations', config);
+            setPersonalizedRecommendations(res.data);
+          } catch (err) {
+            console.error('Greška pri dohvaćanju preporuka:', err);
+          }
+        } else {
+          try {
+            const res = await axios.get('http://localhost:5000/api/recommendations/trending');
+            setTrendingMovies(res.data);
+          } catch (err) {
+            console.error('Greška pri dohvaćanju trending filmova:', err);
+          }
         }
 
         setLoading(false);
@@ -104,11 +114,24 @@ const HomePage = ({ addToCart, user }) => {
         </section>
       ) : (
         <>
+          {/* Preporučeno za prijavljene korisnike */}
           {user && personalizedRecommendations.length > 0 && (
             <section>
               <h2>Preporučeno za vas</h2>
               <div className="movie-grid">
                 {personalizedRecommendations.map(movie => (
+                  <MovieCard key={movie._id} movie={movie} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Trending za goste */}
+          {!user && trendingMovies.length > 0 && (
+            <section>
+              <h2>Trending</h2>
+              <div className="movie-grid">
+                {trendingMovies.map(movie => (
                   <MovieCard key={movie._id} movie={movie} />
                 ))}
               </div>

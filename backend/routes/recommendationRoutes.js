@@ -8,7 +8,7 @@ const { protect } = require('../middleware/authMiddleware');
 // @desc    Get personalized movie recommendations for a user
 // @route   GET /api/movies/recommendations
 // @access  Private
-router.get('/recommendations', protect, async (req, res) => {
+router.get('/', protect, async (req, res) => {
   try {
     // Get user's purchase history
     const purchases = await Purchase.find({ user: req.user._id });
@@ -37,12 +37,12 @@ router.get('/recommendations', protect, async (req, res) => {
       recommendations = await Movie.find({
         _id: { $nin: purchasedMovieIds }, // Exclude already purchased movies
         genre: { $in: favoriteGenres }    // Include movies with favorite genres
-      }).limit(10);
+      }).limit(5);
     } else {
       // If no purchase history, recommend top-rated movies
       recommendations = await Movie.find()
         .sort({ rating: -1 })
-        .limit(10);
+        .limit(5);
     }
     
     res.json(recommendations);
@@ -99,7 +99,7 @@ router.get('/trending', async (req, res) => {
     // Sort movies by purchase count
     const trendingMovieIds = Object.keys(movieCounts)
       .sort((a, b) => movieCounts[b] - movieCounts[a])
-      .slice(0, 10); // Top 10 trending
+      .slice(0, 5); // Top 5 trending
     
     // Get movie details
     const trendingMovies = await Movie.find({
