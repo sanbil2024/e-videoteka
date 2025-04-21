@@ -17,7 +17,7 @@ const importData = async () => {
     await User.deleteMany();
     await Order.deleteMany();
 
-    // Create admin user
+    // Create user 1
     const adminUser = await User.create({
       name: 'Korisnik 1',
       email: 'a@a.com',
@@ -25,10 +25,17 @@ const importData = async () => {
       isAdmin: true,
     });
 
-    // Create regular user
+    // Create user 2
     await User.create({
       name: 'Korisnik 2',
       email: 'b@b.com',
+      password: '123',
+    });
+
+    // Create user 3
+    await User.create({
+      name: 'Korisnik 3',
+      email: 'c@c.com',
       password: '123',
     });
 
