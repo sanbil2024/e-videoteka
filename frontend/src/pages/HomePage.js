@@ -9,6 +9,7 @@ const HomePage = ({ addToCart, user }) => {
   const [newMovies, setNewMovies] = useState([]);
   const [topRatedMovies, setTopRatedMovies] = useState([]);
   const [personalizedRecommendations, setPersonalizedRecommendations] = useState([]);
+  const [allGenres, setAllGenres] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchActive, setSearchActive] = useState(false);
@@ -19,31 +20,28 @@ const HomePage = ({ addToCart, user }) => {
         const { data } = await axios.get('http://localhost:5000/api/movies');
         setMovies(data);
         setFilteredMovies(data);
-        
+
         // Sort by year (descending) for new movies
         const sortedByYear = [...data].sort((a, b) => b.year - a.year);
         setNewMovies(sortedByYear.slice(0, 5));
-        
+
         // Sort by rating (descending) for top rated
         const sortedByRating = [...data].sort((a, b) => b.rating - a.rating);
         setTopRatedMovies(sortedByRating.slice(0, 5));
-        
-        // If user is logged in, fetch personalized recommendations
+
+        // Generiraj sve dostupne žanrove
+        const genres = [...new Set(data.flatMap(movie => movie.genre))];
+        setAllGenres(genres);
+
+        // Preporuke ako je user logiran
         if (user) {
-          try {
-            // This would normally be a backend API call for personalized recommendations
-            // For now, we'll simulate it by selecting movies from genres the user might like
-            const userPreferredGenres = ['Action', 'Sci-Fi', 'Drama']; // Example genres
-            const recommendations = data.filter(movie => 
-              movie.genre.some(genre => userPreferredGenres.includes(genre))
-            ).slice(0, 5);
-            
-            setPersonalizedRecommendations(recommendations);
-          } catch (error) {
-            console.error('Error fetching recommendations:', error);
-          }
+          const userPreferredGenres = ['Action', 'Sci-Fi', 'Drama'];
+          const recommendations = data.filter(movie =>
+            movie.genre.some(genre => userPreferredGenres.includes(genre))
+          ).slice(0, 5);
+          setPersonalizedRecommendations(recommendations);
         }
-        
+
         setLoading(false);
       } catch (error) {
         setError('Došlo je do greške prilikom dohvaćanja filmova.');
@@ -54,28 +52,26 @@ const HomePage = ({ addToCart, user }) => {
     fetchMovies();
   }, [user]);
 
-  const MovieCard = ({ movie }) => {
-    return (
-      <div className="movie-card">
-        <Link to={`/movie/${movie._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-          <img 
-            src={`/images/${movie.image}`} 
-            alt={movie.title} 
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src = 'https://placehold.co/300x450?text=Nema+slike';
-            }}
-          />
-          <div className="movie-card-content">
-            <h3>{movie.title}</h3>
-            <p>{movie.year} • Ocjena: {movie.rating}/10</p>
-            <p className="price">{movie.price.toFixed(2)} €</p>
-          </div>
-        </Link>
-        <button onClick={() => addToCart(movie)}>Dodaj u košaricu</button>
-      </div>
-    );
-  };
+  const MovieCard = ({ movie }) => (
+    <div className="movie-card">
+      <Link to={`/movie/${movie._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+        <img
+          src={`/images/${movie.image}`}
+          alt={movie.title}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = 'https://placehold.co/300x450?text=Nema+slike';
+          }}
+        />
+        <div className="movie-card-content">
+          <h3>{movie.title}</h3>
+          <p>{movie.year} • Ocjena: {movie.rating}/10</p>
+          <p className="price">{movie.price.toFixed(2)} €</p>
+        </div>
+      </Link>
+      <button onClick={() => addToCart(movie)}>Dodaj u košaricu</button>
+    </div>
+  );
 
   const handleSearch = (filtered) => {
     setFilteredMovies(filtered);
@@ -87,8 +83,12 @@ const HomePage = ({ addToCart, user }) => {
 
   return (
     <div>
-      <SearchBar movies={movies} setFilteredMovies={handleSearch} />
-      
+      <SearchBar
+        movies={movies}
+        setFilteredMovies={handleSearch}
+        genres={allGenres}
+      />
+
       {searchActive ? (
         <section>
           <h2>Rezultati pretraživanja ({filteredMovies.length})</h2>

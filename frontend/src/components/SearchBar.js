@@ -1,18 +1,35 @@
 import React, { useState } from 'react';
 
-const SearchBar = ({ movies, setFilteredMovies }) => {
+const SearchBar = ({ movies, setFilteredMovies, genres }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedGenre, setSelectedGenre] = useState('');
 
   const handleSearch = (e) => {
     e.preventDefault();
-    const filtered = movies.filter(movie =>
-      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    filterMovies();
+  };
+
+  const filterMovies = () => {
+    let filtered = movies;
+
+    if (searchTerm) {
+      filtered = filtered.filter(movie =>
+        movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    if (selectedGenre) {
+      filtered = filtered.filter(movie =>
+        movie.genre.includes(selectedGenre)
+      );
+    }
+
     setFilteredMovies(filtered);
   };
 
   const handleClear = () => {
     setSearchTerm('');
+    setSelectedGenre('');
     setFilteredMovies(movies);
   };
 
@@ -25,8 +42,22 @@ const SearchBar = ({ movies, setFilteredMovies }) => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
+
+        <select
+          value={selectedGenre}
+          onChange={(e) => setSelectedGenre(e.target.value)}
+        >
+          <option value="">Odaberite žanr</option>
+          {genres.map((genre, index) => (
+            <option key={index} value={genre}>
+              {genre}
+            </option>
+          ))}
+        </select>
+
         <button type="submit">Pretraži</button>
-        {searchTerm && (
+
+        {(searchTerm || selectedGenre) && (
           <button type="button" onClick={handleClear}>
             Očisti
           </button>
