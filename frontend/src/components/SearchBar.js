@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { filterMoviesBySearchTerm } from '../utils/movieUtils';
 
 const SearchBar = ({ movies, setFilteredMovies }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = (e) => {
     e.preventDefault();
-    const filtered = filterMoviesBySearchTerm(movies, searchTerm);
+    const filtered = movies.filter(movie =>
+      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
     setFilteredMovies(filtered);
   };
 
