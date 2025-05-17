@@ -49,17 +49,13 @@ const PurchasedMoviesPage = ({ user }) => {
         config
       );
 
-      // Find the purchase in state
       const purchase = purchases.find(p => p._id === purchaseId);
-      
-      // Set as currently watching
       setCurrentlyWatching(purchase);
-      
-      // Update purchases list with new view count
+
       setPurchases(
-        purchases.map(p => 
-          p._id === purchaseId 
-            ? { ...p, viewCount: p.viewCount + 1, lastViewed: new Date() } 
+        purchases.map(p =>
+          p._id === purchaseId
+            ? { ...p, viewCount: p.viewCount + 1, lastViewed: new Date() }
             : p
         )
       );
@@ -79,28 +75,27 @@ const PurchasedMoviesPage = ({ user }) => {
 
   if (!user) {
     return (
-      <div>
+      <div className="purchased-container">
         <h1>Kupljeni filmovi</h1>
         <p>Morate biti prijavljeni da biste vidjeli svoje kupljene filmove.</p>
       </div>
     );
   }
 
-  if (loading) return <div>Učitavanje...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading) return <div className="purchased-container">Učitavanje...</div>;
+  if (error) return <div className="purchased-container">{error}</div>;
 
   return (
-    <div>
+    <div className="purchased-container">
       <h1>Kupljeni filmovi</h1>
-
       {currentlyWatching ? (
         <div className="movie-player">
           <h2>Gledate: {currentlyWatching.movie.title}</h2>
-          <div className="video-container" style={{ 
-            backgroundColor: '#000', 
-            height: '400px', 
-            display: 'flex', 
-            alignItems: 'center', 
+          <div className="video-container" style={{
+            backgroundColor: '#000',
+            height: '400px',
+            display: 'flex',
+            alignItems: 'center',
             justifyContent: 'center',
             marginBottom: '20px'
           }}>
@@ -116,62 +111,51 @@ const PurchasedMoviesPage = ({ user }) => {
           </button>
         </div>
       ) : (
-        <>
-          {purchases.length === 0 ? (
-            <p>Još niste kupili nijedan film.</p>
-          ) : (
-            <div className="purchases-list">
-              {purchases.map((purchase) => (
-                <div key={purchase._id} className="purchase-item" style={{
-                  backgroundColor: '#1e1e1e',
-                  padding: '15px',
-                  borderRadius: '8px',
-                  marginBottom: '15px',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center'
-                }}>
-                  <div className="purchase-info" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                    <img 
-                      src={`/images/${purchase.movie.image}`} 
-                      alt={purchase.movie.title} 
-                      style={{ width: '80px', height: '120px', objectFit: 'cover', borderRadius: '4px' }}
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = 'https://placehold.co/80x120?text=Nema+slike';
-                      }}
-                    />
-                    <div>
-                      <h3>
-                        <Link to={`/movie/${purchase.movie._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                          {purchase.movie.title}
-                        </Link>
-                      </h3>
-                      <p>Kupljeno: {formatDate(purchase.purchaseDate)}</p>
-                      <p>Dostupno do: {formatDate(purchase.expiryDate)}</p>
-                      {purchase.lastViewed && (
-                        <p>Zadnje gledano: {formatDate(purchase.lastViewed)}</p>
-                      )}
-                      <p>Broj gledanja: {purchase.viewCount}</p>
-                    </div>
-                  </div>
-                  <div>
-                    <button 
-                      onClick={() => handleWatchMovie(purchase._id)}
-                      disabled={isExpired(purchase.expiryDate)}
-                      style={{ 
-                        opacity: isExpired(purchase.expiryDate) ? 0.5 : 1,
-                        cursor: isExpired(purchase.expiryDate) ? 'not-allowed' : 'pointer'
-                      }}
-                    >
-                      {isExpired(purchase.expiryDate) ? 'Isteklo' : 'Gledaj film'}
-                    </button>
-                  </div>
+        purchases.length === 0 ? (
+          <p>Još niste kupili nijedan film.</p>
+        ) : (
+          <div className="purchased-list">
+            {purchases.map((purchase) => (
+              <div key={purchase._id} className="purchased-card">
+                <img
+                  src={`/images/${purchase.movie.image}`}
+                  alt={purchase.movie.title}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = 'https://placehold.co/300x450?text=Nema+slike';
+                  }}
+                />
+                <div className="purchased-card-content">
+                  <h3>
+                    <Link to={`/movie/${purchase.movie._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      {purchase.movie.title}
+                    </Link>
+                  </h3>
+                  <p>Kupljeno: {formatDate(purchase.purchaseDate)}</p>
+                  <p>Istek: {formatDate(purchase.expiryDate)}</p>
+                  <p>Broj gledanja: {purchase.viewCount}</p>
+                  <button
+                    onClick={() => handleWatchMovie(purchase._id)}
+                    disabled={isExpired(purchase.expiryDate)}
+                    style={{
+                      marginTop: '10px',
+                      width: '100%',
+                      padding: '8px',
+                      backgroundColor: '#1976d2',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '4px',
+                      cursor: isExpired(purchase.expiryDate) ? 'not-allowed' : 'pointer',
+                      opacity: isExpired(purchase.expiryDate) ? 0.5 : 1,
+                    }}
+                  >
+                    {isExpired(purchase.expiryDate) ? 'Isteklo' : 'Gledaj film'}
+                  </button>
                 </div>
-              ))}
-            </div>
-          )}
-        </>
+              </div>
+            ))}
+          </div>
+        )
       )}
     </div>
   );

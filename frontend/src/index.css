@@ -1,3 +1,7 @@
+
+/* ===========================================
+   GLOBAL STYLES
+   =========================================== */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,6 +18,9 @@ code {
     monospace;
 }
 
+/* ===========================================
+   APP LAYOUT
+   =========================================== */
 .App {
   text-align: center;
   max-width: 1200px;
@@ -46,6 +53,9 @@ code {
   background-color: #333;
 }
 
+/* ===========================================
+   MOVIE CARDS & GRIDS
+   =========================================== */
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -105,6 +115,9 @@ code {
   background-color: #1565c0;
 }
 
+/* ===========================================
+   MOVIE DETAILS PAGE
+   =========================================== */
 .movie-details {
   display: flex;
   gap: 30px;
@@ -160,6 +173,9 @@ code {
   background-color: #1565c0;
 }
 
+/* ===========================================
+   REVIEWS
+   =========================================== */
 .reviews {
   margin-top: 40px;
 }
@@ -185,6 +201,9 @@ code {
   color: #f50057;
 }
 
+/* ===========================================
+   FORMS
+   =========================================== */
 .form-group {
   margin-bottom: 15px;
 }
@@ -221,6 +240,9 @@ code {
   background-color: #1565c0;
 }
 
+/* ===========================================
+   CART & CHECKOUT
+   =========================================== */
 .cart {
   margin-top: 20px;
 }
@@ -285,6 +307,9 @@ code {
   background-color: #1565c0;
 }
 
+/* ===========================================
+   AUTHENTICATION
+   =========================================== */
 .auth-container {
   max-width: 400px;
   margin: 40px auto;
@@ -310,49 +335,95 @@ code {
   text-decoration: underline;
 }
 
+/* ===========================================
+   PROFILE PAGE
+   =========================================== */
 .profile {
-  margin-top: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
 }
 
-.profile-section {
-  margin-bottom: 30px;
-}
-
-.profile-section h2 {
-  border-bottom: 1px solid #333;
-  padding-bottom: 10px;
+.profile h1 {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.recommendation-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.profile form {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
-.footer {
-  margin-top: 50px;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 1px solid #333;
-  color: #b0b0b0;
+.field-group {
+  width: 100%;
+  max-width: 200px;
 }
 
-@media (max-width: 768px) {
-  .movie-details {
-    flex-direction: column;
-  }
-  
-  .movie-poster {
-    flex: 0 0 auto;
-    margin-bottom: 20px;
-  }
-  
-  .movie-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
+.field-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #ccc;
 }
 
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #121212;
+  color: white;
+}
+
+.field-row input[readonly] {
+  background-color: transparent;
+  border: none;
+  color: #bbb;
+  cursor: default;
+}
+
+.field-row button {
+  background-color: #444;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.field-row button:hover {
+  background-color: #555;
+}
+
+.profile button[type="submit"] {
+  background-color: #1976d2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.profile button[type="submit"]:hover {
+  background-color: #1565c0;
+}
+
+
+/* ===========================================
+   SEARCH BAR
+   =========================================== */
 .search-bar {
   background-color: #1e1e1e;
   padding: 15px;
@@ -395,4 +466,95 @@ code {
   gap: 10px;
   justify-content: center;
   width: 100%;
+}
+
+/* ===========================================
+   PURCHASED MOVIES
+   =========================================== */
+.purchased-container {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+  color: white;
+}
+
+.purchased-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.purchased-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.purchased-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.purchased-card:hover {
+  transform: translateY(-5px);
+}
+
+.purchased-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.purchased-card-content {
+  padding: 15px;
+}
+
+.purchased-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.purchased-card p {
+  margin: 5px 0;
+  color: #b0b0b0;
+}
+
+.purchased-card .price {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+.footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #333;
+  color: #b0b0b0;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+@media (max-width: 768px) {
+  .movie-details {
+    flex-direction: column;
+  }
+
+  .movie-poster {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }
